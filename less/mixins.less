@@ -1,1 +1,15 @@
 // Mixins in here
+
+.b-border() {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.button(@p, @r, @back) {
+   padding: @p;
+   border-radius: @r;
+   background: @back;
+}
+
+.padding (@padding) {
+    padding: @padding;
+}

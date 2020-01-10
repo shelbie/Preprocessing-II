@@ -12,6 +12,11 @@ html, body {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Indie Flower', cursive;
+
+  @media @mobile {
+    .padding(5% 0);
+
+  }
 }
 
 h1 {
@@ -43,4 +48,8 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media @mobile {
+    max-width: 440px;
+  }
 }

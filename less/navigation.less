@@ -1,1 +1,49 @@
 // Navigation Styles here
+
+header {
+    color: @font-color;
+    background-color:@main-bg;
+    .b-border();
+
+    
+    div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 1% 0;
+
+        @media mobile{
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+        }
+
+    h1 {
+        width: 60%;
+        @media mobile{
+            width: 100%;
+            padding: 3%;
+        }
+
+    }
+
+    nav {
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+        align-items: center;
+        @media mobile{
+            width: 100%;
+        
+            
+        }
+    
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        }}
+}
