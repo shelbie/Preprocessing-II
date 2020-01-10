@@ -2,27 +2,43 @@
 
 header {
     color: @font-color;
-    border-bottom: dashed 2px @navigation-border;
+    background-color:@main-bg;
+    .b-border();
 
+    
     div {
         display: flex;
         justify-content: center;
-        justify-content: space-evenly;
         width: 100%;
-        padding: 2% 0;
-    
+        padding: 1% 0;
+
+        @media mobile{
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+        }
 
     h1 {
-        width: 50%;
+        width: 60%;
+        @media mobile{
+            width: 100%;
+            padding: 3%;
+        }
 
     }
 
     nav {
         display: flex;
-        width: 50%;
-        justify-content: space-between;
+        width: 40%;
+        justify-content: space-around;
         align-items: center;
-
+        @media mobile{
+            width: 100%;
+        
+            
+        }
     
 
         a {
